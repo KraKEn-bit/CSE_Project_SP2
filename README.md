@@ -219,14 +219,3 @@ Exclusive to **Player 2 (Cure)**.
 
 ---
 
-## 👥 Contributors
-
-- **Main Developer:** You  
-- **Hover Logic:** Nuhiat  
-- **Design & Documentation:** Team Junktive Gathering  
-
----
-
-## 🧾 License
-
-This project is released under the **MIT License** — feel free to use and modify with credit.
