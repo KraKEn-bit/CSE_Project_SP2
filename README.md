@@ -25,13 +25,6 @@ Ans: ONLY **RAYLIB**  : (
 
 # **OUR GAME PROPERTIES:**
 
-# 🌍 Junktive Gathering — Global Infection Simulation
-
-**Junktive Gathering** is a simulation game inspired by global pandemic mechanics.  
-The player spreads (or cures) a disease across the world in a dynamic, strategy-based system where both infection and cure evolve over time.
-
----
-
 ## 🎮 Overview
 
 The simulation visualizes the **infection rate** across countries, where the opacity of infection circles gradually increases from transparent to fully visible.  
