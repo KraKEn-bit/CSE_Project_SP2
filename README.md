@@ -25,7 +25,7 @@ Ans: ONLY **RAYLIB**  : (
 
 # **OUR GAME PROPERTIES:**
 
-## 🎮 Overview
+## Overview
 
 The simulation visualizes the **infection rate** across countries, where the opacity of infection circles gradually increases from transparent to fully visible.  
 The sidebar dynamically displays:
@@ -39,7 +39,7 @@ The game can be played in **multiplayer mode**:
 
 ---
 
-## 🧬 DISPLAY()
+## DISPLAY()
 
 To represent infection visually:
 - Opacity increases from `1/205 → 2/205 → 3/205 ... → 205/205 = 1.0 (max opacity)`
@@ -48,14 +48,14 @@ To represent infection visually:
 
 ---
 
-## 🦠 INFECT AND CURE POINTS
+## INFECT AND CURE POINTS
 
-### 🔴 INFECT_POINTS
+### INFECT_POINTS
 
 We introduced a global variable called `INFECT_POINTS`.  
 These are **earned by Player 1** by interacting with infection bubbles.
 
-#### 🧩 Usage:
+####  Usage:
 Infect Points are the **currency** for upgrading virus capabilities and spread rate through the **Upgrade Menu**.  
 
 Upgradable parameters include:
@@ -69,26 +69,26 @@ Players must spend their points strategically to make the virus more potent and 
 
 ---
 
-### 🧪 CURE_POINTS
+### CURE_POINTS
 
 `CURE_POINTS` are **earned by Player 2**, who must press random on-screen keys at the right time to collect them.  
 Each successful input gives `CURE_POINT++`.
 
 These points are spent to improve cure development and post-cure control.
 
-#### 🧠 Cure Upgrades (via `upgradeManage()`):
+#### Cure Upgrades (via `upgradeManage()`):
 Each upgrade starts at **5 points**, with cost increasing per level.
 
 Upgradable parameters include:
-- ⚗️ Effort → Speeds up cure research  
-- 🧬 Combat Infection → Reduces spread rate after cure  
-- 💊 Combat Death → Reduces deaths after cure  
+-  Effort → Speeds up cure research  
+-  Combat Infection → Reduces spread rate after cure  
+-  Combat Death → Reduces deaths after cure  
 
 Maximum upgrade level: **5**
 
 ---
 
-## 🖱️ MOUSE HOVER INFO (by Nuhiat)
+## MOUSE HOVER INFO (by Nuhiat)
 
 Hovering the mouse over a country shows real-time info:
 - Country name  
@@ -108,7 +108,7 @@ If a country is clicked **before the game starts**:
 
 ---
 
-## 🧱 CURE STRUCT
+## CURE STRUCT
 
 The **Cure Structure** stores cure-related variables and progress metrics, managing upgrades, cooldowns, and research speed as the cure develops over time.
 
@@ -159,7 +159,7 @@ Cooldown prevents more than one bubble from spawning too soon (`15 × FPS` delay
 
 ---
 
-## 💚 CURE BUBBLES (Green Circles)
+## CURE BUBBLES (Green Circles)
 
 Exclusive to **Player 2 (Cure)**.
 
@@ -172,7 +172,7 @@ Exclusive to **Player 2 (Cure)**.
 
 ---
 
-## 🔁 POINT SYSTEM FUNCTIONS
+## POINT SYSTEM FUNCTIONS
 
 ### `points_update()`
 - Checks each country’s infection status  
@@ -190,7 +190,7 @@ Exclusive to **Player 2 (Cure)**.
 
 ---
 
-## 🧩 SUMMARY OF GAMEPLAY LOOP
+## SUMMARY OF GAMEPLAY LOOP
 
 1. Hover over countries to see stats  
 2. Click to start infection in a chosen country  
@@ -203,7 +203,7 @@ Exclusive to **Player 2 (Cure)**.
 
 ---
 
-## 🧠 Future Plans
+## Future Plans
 
 - Add sound effects for infection/cure bubbles  
 - Introduce AI mode (single-player option)  
